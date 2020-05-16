@@ -98,7 +98,7 @@ echo var shell = WScript.CreateObject^("WScript.Shell"^);
 echo var fileSystem = new ActiveXObject^("Scripting.FileSystemObject"^);
 echo try{
 echo     if^( ^^!fileSystem.FolderExists^(filePath^) ^&^& ^^!fileSystem.FileExists^(filePath^) ^){
-echo         throw "File Not Found : \n" + filePath;
+echo         throw "Folder or file not found : \n" + filePath;
 echo     }
 echo     shell.Run^( "explorer.exe " + filePath ^);
 echo }catch^(error^){
