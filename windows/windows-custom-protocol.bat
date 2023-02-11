@@ -151,7 +151,7 @@ if "!choice!"=="R" (
 pause>nul|set/p =Deleting temporary files. Press Any key to continue ...
 
 if exist "testFile.txt" (
-	del fichierTest.txt /f /q
+	del testFile.txt /f /q
 )
 if exist "testProtocol.html" (
 	del testProtocol.html /f /q
